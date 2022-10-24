@@ -1,0 +1,33 @@
+Selenium:
+-------------
+1. Web browser automation tool
+2. open source(free download)
+3. supports java,python,js,c# etc..
+4. Supports multiple browsers (chrome, ff, ie, opera etc ...)
+5. headless execution
+
+
+    Selenium IDE -> record and playback tool
+****Web Driver -> automate steps(coding tool)
+    Grid -> platforms  windowschrome, macossafari, linuxopera
+
+ Installation:
+ 1. create mvn project
+ 2. download selenium webdriver jars -> specify dependency in the pom.xml file
+ 3. download drivers
+
+ Xpath syntax:
+ --------------
+ 1. if you have unique attr and value
+        //tag[@attr='value']
+        //tag[@aatr1='value1' and @attr2='value2']
+
+ 2. if you have element text
+        //tag[.='text']    -> exact match
+        //tag[contains(.,'text')]  -> partial match
+
+findelement vs elements:
+----------------------
+if no elemet present
+findelement , will throe elementNOtPresent exception
+findelements, will return empty list , but it will not throw any exception.
