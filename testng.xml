@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="demo suite">
+    <parameter name="browser" value="chrome"></parameter>
+    <test name="test1">
+        <classes>
+            <class name="SeleniumTests.TestngDemo">
+                <methods>
+                    <include name="appleTest"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="test2">
+        <classes>
+            <class name="SeleniumTests.TestngDemo">
+                <methods>
+                    <parameter name="name" value="harsha"></parameter>
+                    <include name="orangeTest"></include>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+    <test name="test3">
+        <classes>
+            <class name="SeleniumTests.TestngDemo">
+                <methods>
+                    <include name="mangoTest"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
